@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Ejemplo completo de HTML para clases de programación">
+  <meta name="keywords" content="HTML, ejemplo, etiquetas">
+  <meta name="author" content="Clase de Programación">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo Completo de HTML</title>
+</head>
+
+<body>
+
+  <!-- ENCABEZADO SEMÁNTICO -->
+  <header>
+    <h1>Ejemplo General de HTML</h1>
+    <p>Documento demostrativo con la mayoría de las etiquetas HTML.</p>
+  </header>
+
+  <!-- NAVEGACIÓN -->
+  <nav>
+    <a href="#texto">Texto</a>
+    <a href="#listas">Listas</a>
+    <a href="#tablas">Tablas</a>
+    <a href="#formularios">Formularios</a>
+    <a href="#multimedia">Multimedia</a>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+
+    <!-- TEXTO -->
+    <section id="texto">
+      <h2>Texto y formato</h2>
+
+      <p>Este es un <strong>párrafo</strong> con <em>énfasis</em>, <mark>resaltado</mark> y <small>texto pequeño</small>.</p>
+
+      <p>Texto con <abbr title="HyperText Markup Language">HTML</abbr> y una cita:</p>
+
+      <blockquote cite="https://www.w3.org">
+        HTML es el lenguaje estándar para crear páginas web.
+      </blockquote>
+
+      <p>Código en línea: <code>console.log("Hola mundo");</code></p>
+
+      <pre>
+function saludar() {
+  console.log("Hola mundo");
+}
+      </pre>
+
+      <p>Salto de línea<br>forzado.</p>
+      <hr>
+    </section>
+
+    <!-- LISTAS -->
+    <section id="listas">
+      <h2>Listas</h2>
+
+      <h3>Lista desordenada</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+
+      <h3>Lista ordenada</h3>
+      <ol>
+        <li>Diseñar</li>
+        <li>Programar</li>
+        <li>Probar</li>
+      </ol>
+
+      <h3>Lista de definición</h3>
+      <dl>
+        <dt>HTML</dt>
+        <dd>Estructura</dd>
+        <dt>CSS</dt>
+        <dd>Estilos</dd>
+      </dl>
+    </section>
+
+    <!-- TABLAS -->
+    <section id="tablas">
+      <h2>Tablas</h2>
+
+      <table border="1">
+        <caption>Lenguajes Web</caption>
+        <thead>
+          <tr>
+            <th>Lenguaje</th>
+            <th>Tipo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>Estructura</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Estilo</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Ejemplo educativo</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <!-- FORMULARIOS -->
+    <section id="formularios">
+      <h2>Formularios</h2>
+
+      <form>
+        <fieldset>
+          <legend>Datos personales</legend>
+
+          <label>
+            Nombre:
+            <input type="text" name="nombre" placeholder="Tu nombre">
+          </label>
+          <br><br>
+
+          <label>
+            Email:
+            <input type="email" name="email">
+          </label>
+          <br><br>
+
+          <label>
+            Edad:
+            <input type="number" min="0">
+          </label>
+          <br><br>
+
+          <label>
+            Fecha:
+            <input type="date">
+          </label>
+          <br><br>
+
+          <label>
+            Lenguaje favorito:
+            <select>
+              <option>HTML</option>
+              <option>CSS</option>
+              <option>JavaScript</option>
+            </select>
+          </label>
+          <br><br>
+
+          <label>
+            <input type="checkbox"> Acepto términos
+          </label>
+          <br><br>
+
+          <label>
+            <input type="radio" name="nivel"> Inicial
+          </label>
+          <label>
+            <input type="radio" name="nivel"> Avanzado
+          </label>
+          <br><br>
+
+          <textarea rows="4" cols="40">Comentario...</textarea>
+          <br><br>
+
+          <button type="submit">Enviar</button>
+          <button type="reset">Resetear</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <!-- MULTIMEDIA -->
+    <section id="multimedia">
+      <h2>Multimedia</h2>
+
+      <figure>
+        <img src="https://via.placeholder.com/200" alt="Imagen de ejemplo">
+        <figcaption>Imagen de ejemplo</figcaption>
+      </figure>
+
+      <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio.
+      </audio>
+
+      <br><br>
+
+      <video controls width="300">
+        <source src="video.mp4" type="video/mp4">
+        Tu navegador no soporta video.
+      </video>
+
+      <br><br>
+
+      <iframe
+        width="300"
+        height="200"
+        src="https://www.example.com"
+        title="Iframe de ejemplo">
+      </iframe>
+    </section>
+
+    <!-- ELEMENTOS SEMÁNTICOS EXTRA -->
+    <section>
+      <h2>Otros elementos</h2>
+
+      <details>
+        <summary>Mostrar más información</summary>
+        <p>Contenido oculto con details/summary.</p>
+      </details>
+
+      <progress value="70" max="100"></progress>
+      <meter value="0.6"></meter>
+
+      <address>
+        Contacto: <a href="mailto:info@ejemplo.com">info@ejemplo.com</a>
+      </address>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>&copy; 2026 - Documento educativo</p>
+    <time datetime="2026-01-05">5 de enero de 2026</time>
+  </footer>
+
+</body>
+</html>
