@@ -1,61 +1,154 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
+  <!-- CONFIGURACIÓN BÁSICA DEL DOCUMENTO -->
   <meta charset="UTF-8">
   <meta name="description" content="Ejemplo completo de HTML para clases de programación">
   <meta name="keywords" content="HTML, ejemplo, etiquetas">
   <meta name="author" content="Clase de Programación">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
+  <!-- URL CANÓNICA (SEO) -->
   <link rel="canonical" href="https://tuti-html.netlify.app/">
-  
-  <link rel="icon" href="https://i.imgur.com/DZyJDVy.jpeg"> 
-  
+
+  <!-- ICONO DEL SITIO (FAVICON) -->
+  <link rel="icon" href="https://i.imgur.com/DZyJDVy.jpeg">
+
+  <!-- METADATOS OPEN GRAPH (REDES SOCIALES) -->
   <meta property="og:title" content="Ejemplo Completo de HTML">
   <meta property="og:description" content="Documento demostrativo para clases de programación">
-<meta property="og:image" content="https://i.imgur.com/DZyJDVy.jpeg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Ejemplo completo de HTML para clases de programación">
+  <meta property="og:image" content="https://i.imgur.com/DZyJDVy.jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Ejemplo completo de HTML para clases de programación">
   <meta property="og:url" content="https://tuti-html.netlify.app/">
   <meta property="og:type" content="website">
-  
+
+  <!-- TÍTULO QUE APARECE EN LA PESTAÑA DEL NAVEGADOR -->
   <title>Ejemplo Completo de HTML</title>
+
 </head>
 
 <body>
 
-  <!-- ENCABEZADO SEMÁNTICO -->
+  <!-- ENCABEZADO SEMÁNTICO PRINCIPAL -->
   <header>
     <h1>Ejemplo General de HTML</h1>
     <p>Documento demostrativo con la mayoría de las etiquetas HTML.</p>
   </header>
 
-  <!-- NAVEGACIÓN -->
+  <!-- NAVEGACIÓN PRINCIPAL -->
   <nav>
+    <a href="#multimedia">Multimedia</a>
     <a href="#texto">Texto</a>
     <a href="#listas">Listas</a>
     <a href="#tablas">Tablas</a>
     <a href="#formularios">Formularios</a>
-    <a href="#multimedia">Multimedia</a>
   </nav>
 
-  <!-- CONTENIDO PRINCIPAL -->
+  <!-- CONTENIDO PRINCIPAL DEL DOCUMENTO -->
   <main>
 
-    <!-- TEXTO -->
+    <!-- MULTIMEDIA (PRIMERA SECCIÓN) -->
+    <!-- Ejemplo completo de contenido audiovisual con contexto -->
+    <section id="multimedia">
+      <h2>Multimedia: Einstein y la bomba</h2>
+
+      <!-- IMAGEN REPRESENTATIVA -->
+      <!-- Se usa figure para asociar imagen con su descripción -->
+      <figure>
+        <img
+          src="imagen/einstein.jpeg"
+          alt="Retrato de Albert Einstein"
+          width="280"
+          height="400">
+        <figcaption>Albert Einstein (1879–1955)</figcaption>
+      </figure>
+
+      <!-- DESCRIPCIÓN GENERAL -->
+      <p>
+        Albert Einstein fue uno de los científicos más influyentes del siglo XX.
+        Sus descubrimientos revolucionaron la física moderna y tuvieron un impacto
+        directo en el desarrollo de tecnologías que cambiaron la historia.
+      </p>
+
+      <hr>
+
+      <!-- TRÁILER DE LA PELÍCULA -->
+      <!-- Video local que introduce el contenido -->
+      <h3>Tráiler: <em>Einstein y la bomba</em></h3>
+
+      <p>
+        El tráiler presenta el contexto histórico y científico de la película,
+        centrada en el papel de Einstein durante la Segunda Guerra Mundial
+        y su relación indirecta con el desarrollo de la bomba atómica.
+      </p>
+
+      <video controls width="350" height="191">
+        <source src="video/trailer.mp4" type="video/mp4">
+        Tu navegador no soporta video.
+      </video>
+
+      <br><br>
+
+      <!-- PELÍCULA COMPLETA EMBEBIDA -->
+      <!-- Uso de iframe para contenido externo -->
+      <h3>Película completa</h3>
+
+      <p>
+        <strong>Einstein y la bomba</strong> es un docudrama que combina
+        recreaciones históricas con material documental.
+        La obra explora los dilemas éticos, científicos y políticos
+        que rodearon la creación de la bomba nuclear.
+      </p>
+
+      <iframe
+        width="350"
+        height="191"
+        src="https://drive.google.com/file/d/14XD1sQT6s8AriirhohdpxhyudoGlK32R/preview"
+        allow="autoplay"
+        allowfullscreen
+        title="Película Einstein y la bomba">
+      </iframe>
+
+      <br><br>
+
+      <!-- AUDIO DE EJEMPLO -->
+      <!-- Se incluye como demostración del elemento audio -->
+      <h3>Audio de ejemplo</h3>
+
+      <p>
+        Este audio se utiliza únicamente como ejemplo técnico
+        del uso de la etiqueta <code>&lt;audio&gt;</code> en HTML.
+      </p>
+
+      <audio controls>
+        <source src="audio/manzana.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio.
+      </audio>
+    </section>
+
+    <!-- TEXTO Y FORMATO -->
     <section id="texto">
       <h2>Texto y formato</h2>
 
-      <p>Este es un <strong>párrafo</strong> con <em>énfasis</em>, <mark>resaltado</mark> y <small>texto pequeño</small>.</p>
+      <p>
+        Este es un <strong>párrafo</strong> con <em>énfasis</em>,
+        <mark>resaltado</mark> y <small>texto pequeño</small>.
+      </p>
 
-      <p>Texto con <abbr title="HyperText Markup Language">HTML</abbr> y una cita:</p>
+      <p>
+        Texto con <abbr title="HyperText Markup Language">HTML</abbr> y una cita:
+      </p>
 
       <blockquote cite="https://www.w3.org">
         HTML es el lenguaje estándar para crear páginas web.
       </blockquote>
 
-      <p>Código en línea: <code>console.log("Hola mundo");</code></p>
+      <p>
+        Código en línea: <code>console.log("Hola mundo");</code>
+      </p>
 
       <pre>
 function saludar() {
@@ -63,7 +156,11 @@ function saludar() {
 }
       </pre>
 
-      <p>Salto de línea<br>forzado.</p>
+      <p>
+        Salto de línea<br>
+        forzado.
+      </p>
+
       <hr>
     </section>
 
@@ -100,12 +197,14 @@ function saludar() {
 
       <table border="1">
         <caption>Lenguajes Web</caption>
+
         <thead>
           <tr>
             <th>Lenguaje</th>
             <th>Tipo</th>
           </tr>
         </thead>
+
         <tbody>
           <tr>
             <td>HTML</td>
@@ -116,6 +215,7 @@ function saludar() {
             <td>Estilo</td>
           </tr>
         </tbody>
+
         <tfoot>
           <tr>
             <td colspan="2">Ejemplo educativo</td>
@@ -136,24 +236,28 @@ function saludar() {
             Nombre:
             <input type="text" name="nombre" placeholder="Tu nombre">
           </label>
+
           <br><br>
 
           <label>
             Email:
             <input type="email" name="email">
           </label>
+
           <br><br>
 
           <label>
             Edad:
             <input type="number" min="0">
           </label>
+
           <br><br>
 
           <label>
             Fecha:
             <input type="date">
           </label>
+
           <br><br>
 
           <label>
@@ -164,11 +268,13 @@ function saludar() {
               <option>JavaScript</option>
             </select>
           </label>
+
           <br><br>
 
           <label>
             <input type="checkbox"> Acepto términos
           </label>
+
           <br><br>
 
           <label>
@@ -177,9 +283,11 @@ function saludar() {
           <label>
             <input type="radio" name="nivel"> Avanzado
           </label>
+
           <br><br>
 
           <textarea rows="4" cols="40">Comentario...</textarea>
+
           <br><br>
 
           <button type="submit">Enviar</button>
@@ -187,50 +295,6 @@ function saludar() {
         </fieldset>
       </form>
     </section>
-    
-    <!-- MULTIMEDIA -->
-    
-    <section id="multimedia">
-  <h2>Multimedia</h2>
-
-  <figure>
-    <img
-      src="imagen/einstein.jpeg"
-      alt="Imagen de ejemplo"
-      width="280"
-      height="400">
-    <figcaption>Albert Einstein</figcaption>
-  </figure>
-
-  <br><br>
-
-  <video
-    controls
-    width="350"
-    height="191">
-    <source src="video/trailer.mp4" type="video/mp4">
-    Tu navegador no soporta video.
-  </video>
-
-  <br><br>
-
-  <iframe
-    width="350"
-    height="191"
-    src="https://drive.google.com/file/d/14XD1sQT6s8AriirhohdpxhyudoGlK32R/preview"
-    allow="autoplay"
-    allowfullscreen
-    title="Video embebido">
-  </iframe>
-  
-  <br><br>
-  
-        <audio controls>
-        <source src="audio/manzana.mp3" type="audio/mpeg">
-        Tu navegador no soporta audio.
-      </audio>
-      
-</section>
 
     <!-- ELEMENTOS SEMÁNTICOS EXTRA -->
     <section>
@@ -245,7 +309,8 @@ function saludar() {
       <meter value="0.6"></meter>
 
       <address>
-        Contacto: <a href="mailto:info@ejemplo.com">info@ejemplo.com</a>
+        Contacto:
+        <a href="mailto:info@ejemplo.com">info@ejemplo.com</a>
       </address>
     </section>
 
