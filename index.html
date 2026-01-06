@@ -111,13 +111,9 @@ const initialHTML =
   <!-- TÍTULO QUE APARECE EN LA PESTAÑA DEL NAVEGADOR -->
 <title>Ejemplo Completo de HTML</title>
 
-<style>
-body {background:#fff;}
-</style>
-
 </head>
 
-<body>
+<body style="background:#fff;">
 
   <!-- ENCABEZADO SEMÁNTICO PRINCIPAL -->
   <header>
@@ -147,9 +143,7 @@ body {background:#fff;}
       <figure>
         <img
           src="imagen/einstein.jpeg"
-          alt="Retrato de Albert Einstein"
-          width="265"
-          height="365">
+          alt="Retrato de Albert Einstein">
         <figcaption>Albert Einstein (1879–1955)</figcaption>
       </figure>
 
@@ -172,7 +166,7 @@ body {background:#fff;}
         y su relación indirecta con el desarrollo de la bomba atómica.
       </p>
 
-      <video controls width="350" height="191">
+      <video controls>
         <source src="video/trailer.mp4" type="video/mp4">
         Tu navegador no soporta video.
       </video>
@@ -191,8 +185,7 @@ body {background:#fff;}
       </p>
 
       <iframe
-        width="350"
-        height="191"
+        
         src="https://drive.google.com/file/d/14XD1sQT6s8AriirhohdpxhyudoGlK32R/preview"
         allow="autoplay"
         allowfullscreen
